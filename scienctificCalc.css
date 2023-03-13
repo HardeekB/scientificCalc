@@ -1,0 +1,51 @@
+button{
+    border: none;
+    font-size: 15px;
+    /* margin-left: 25px; */
+    padding: 10px;
+}
+button:hover{
+    user-select: none;
+    background-color: rgb(205, 212, 221) !important;
+}
+/* #trigonometryDropdown{
+    color: black;
+    background-color: transparent;
+    border: none;
+
+}
+#functionsDropdown{
+    color: black;
+    background-color: transparent;
+    border: none;
+} */
+.mainDiv{
+    /* border: solid black;  */
+
+    position: absolute;
+    top: 20%; 
+    left: 30%; 
+    
+    width: 430px; 
+    height: 400px; 
+    padding: 15px; 
+    padding-bottom:5px; 
+    padding: top 4px; 
+    background-color: rgb(240, 236, 236);
+    height: fit-content;
+}
+table button{
+    width: 100%;
+}
+
+#displayWindow{
+    float:left;
+     font-size: 40px; 
+     font-weight: 500; 
+     width: 400px;
+     clear:left;
+     text-align: end;
+     border: none;
+     font: black;
+     
+}
