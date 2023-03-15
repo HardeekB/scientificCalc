@@ -72,7 +72,7 @@ try {
             display.value = "Syntax error";
         }
         else {
-            msGlobalMemory += Number(display.value);
+            msGlobalMemory = Number(msGlobalMemory) + Number(display.value);
             document.getElementById("memoryElement").innerHTML = 'Memory:' + msGlobalMemory;
         }
     }
@@ -248,7 +248,7 @@ try {
     }
     
     function logButtonClicked(){
-        display.value = Math.log(display.value);
+        display.value = Math.log10(display.value);
     }
 
     function lnButtonClicked() {
