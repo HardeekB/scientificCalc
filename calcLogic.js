@@ -147,7 +147,7 @@ try {
     // end of functions menu
 
     function twondButtonClicked() {
-        display.value = Math.pow(2,display.value).toFixed(10);
+        display.value = Math.pow(2,display.value);
     }
 
     function piButtonClicked() {
@@ -168,7 +168,7 @@ try {
     }
 
     function backSpaceFunction() {
-        display.value = display.value.slice(0, display.value.length - 1).toFixed(10);
+        display.value = display.value.slice(0, display.value.length - 1);
         // let b = Array.from(display.value);       //converting string to array  
         // b.pop();
         // console.log(b);
@@ -187,7 +187,7 @@ try {
     }
 
     function xSquareButtonClicked() {
-        display.value = Math.pow(display.value, 2).toFixed(10);
+        display.value = Math.pow(display.value, 2);
         if (isNaN(display.value)) {
             display.value = "Syntax error";
         }
@@ -201,7 +201,7 @@ try {
     }
 
     function modulusButtonClicked() {
-        display.value = Math.abs(display.value).toFixed(10);
+        display.value = Math.abs(display.value);
         if (isNaN(display.value)) {
             display.value = "Syntax error";
         }
@@ -209,10 +209,13 @@ try {
 
     function expButtonClicked(){
         display.value = Math.exp(display.value).toFixed(10);
+        if (isNaN(display.value)) {
+            display.value = "Syntax error";
+        }
     }
     
     function squarerootButtonClicked() {
-        display.value = Math.sqrt(display.value).toFixed(10);
+        display.value = Math.sqrt(display.value);
         if (isNaN(display.value)) {
             display.value = "Syntax error";
         }
@@ -224,7 +227,7 @@ try {
         for (sum = 1; TempDisplayString != 1; TempDisplayString--) {
             sum *= TempDisplayString;
         }
-        display.value = sum.toFixed(10);
+        display.value = sum;
 
         if (isNaN(display.value)) {
             display.value = "Syntax error";
@@ -233,7 +236,7 @@ try {
     
     function tenXButtonClicked() {
         // let TempDisplayString,answer;
-        display.value = Math.pow(10, display.value).toFixed(10);
+        display.value = Math.pow(10, display.value);
         if (isNaN(display.value)) {
             display.value = "Syntax error";
             //console.log("inside if");
@@ -274,19 +277,13 @@ try {
     
     function equalFunction() {
         let x = eval(display.value);
-        display.value = x.toFixed(10);
+        display.value = x;
         if (isNaN(display.value)) {
             display.value = "Syntax error";
         }
     }
-
-    
-
-    
-
-    
-
 }
+
 catch (err) {
     console.log(err);
     displayWindow.value = "Syntax Error";
