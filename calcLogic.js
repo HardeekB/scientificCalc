@@ -225,7 +225,7 @@ try {
         TempDisplayString = display.value;
         let sum = 0;
         for (sum = 1; TempDisplayString != 1; TempDisplayString--) {
-            sum *= TempDisplayString;
+            sum = sum * TempDisplayString;
         }
         display.value = sum;
 
