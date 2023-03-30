@@ -194,7 +194,7 @@ try {
     }
 
     function oneDividedbyClicked() {
-        display.value = 1 / display.value.toFixed(10);
+        display.value = 1 / display.value;
         if (isNaN(display.value)) {
             display.value = "Syntax error";
         }
